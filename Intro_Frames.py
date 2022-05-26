@@ -194,16 +194,20 @@ import expanding_pages
 def bring_hiding_fuction_in_menu_page():
     expanding_pages.hiding_expanding_frames()
     expanding_pages.Simply_cheese_canvas.yview_moveto(0.0)
-
+    expanding_pages.American_pepperion_canvas.yview_moveto(0.0)
+    expanding_pages.Cheesy_gralic_pizza_canvas.yview_moveto(0.0)
 
 # Resizing scrollbar for detail pages when moving back to home page
 def resizing_scroll_bar_home_page():
     expanding_pages.Simply_cheese_canvas.yview_moveto(0.0)
-
+    expanding_pages.American_pepperion_canvas.yview_moveto(0.0)
+    expanding_pages.Cheesy_gralic_pizza_canvas.yview_moveto(0.0)
 
 # Resizing scrollbar for detail pages when moving back to order page
 def resizing_scroll_bar_order_page():
     expanding_pages.Simply_cheese_canvas.yview_moveto(0.0)
+    expanding_pages.American_pepperion_canvas.yview_moveto(0.0)
+    expanding_pages.Cheesy_gralic_pizza_canvas.yview_moveto(0.0)
 
 # importing Delivery and pickup file here to avoid loop important error
 import Delivery_or_pickup
@@ -211,3 +215,4 @@ import Delivery_or_pickup
 
 
 window.mainloop()
+
