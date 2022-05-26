@@ -38,13 +38,13 @@ def expanding_cheesy_gralic_pizza():
     Cheesy_gralic_pizza_scroll_bar.pack(side=RIGHT,fill=Y)
     Cheesy_gralic_pizza_canvas.configure(yscrollcommand=Cheesy_gralic_pizza_scroll_bar.set)
     Cheesy_gralic_pizza_canvas.bind("<Configure>",lambda e:Cheesy_gralic_pizza_canvas.configure(scrollregion=Cheesy_gralic_pizza_canvas.bbox('all')))
-    Cheesy_gralic_pizza_canvas.create_window((0,0),window=mini_Cheesy_gralic_pizza_frame,width = 1066,anchor='nw')
+    Cheesy_gralic_pizza_canvas.create_window((0,0),window=mini_Cheesy_gralic_pizza_frame,width = 1066, height = 1550,anchor='nw')
 
 
 Cheesy_gralic_pizza_frame = Frame(Intro_Frames.window)
 Cheesy_gralic_pizza_canvas = Canvas(Cheesy_gralic_pizza_frame)
 Cheesy_gralic_pizza_scroll_bar = ttk.Scrollbar(Cheesy_gralic_pizza_frame, orient=VERTICAL,command=Cheesy_gralic_pizza_canvas.yview)
-mini_Cheesy_gralic_pizza_frame = Frame(Cheesy_gralic_pizza_canvas)
+mini_Cheesy_gralic_pizza_frame = Frame(Cheesy_gralic_pizza_canvas, bg = '#14141D')
 
 
 # Chicken supreme scroll bar and mini frame
@@ -61,7 +61,7 @@ def expanding_chicken_supreme():
 Chicken_supreme_frame = Frame(Intro_Frames.window)
 Chicken_supreme_canvas = Canvas(Chicken_supreme_frame)
 Chicekn_supreme_scroll_bar = ttk.Scrollbar(Chicken_supreme_canvas, orient=VERTICAL,command=Chicken_supreme_canvas.yview)
-mini_chicken_supreme_frame = Frame(Chicken_supreme_canvas)
+mini_chicken_supreme_frame = Frame(Chicken_supreme_canvas, bg = '#14141D')
 
 
 # Ham and cheese scroll bar and frame
@@ -509,3 +509,108 @@ def delete_toppings_american_pepperoni():
 
 # Creating a new varibale for the topping list for simlply cheese so it can be used in differnet moduels as the actual files causes import loop error
 topping_american_pepperoni_list = amp.storing_current_toppings
+
+
+
+
+
+
+# Cheesy Gralic Pizza information
+# Reseting the scroll bar for detail pages when going away from the detail pizza page
+def cheesy_gralic_going_order_list():
+    Cheesy_gralic_pizza_canvas.yview_moveto(0.0)
+    Intro_Frames.order_list_page()
+
+
+def cheesy_gralic_going_menu_page():
+    Cheesy_gralic_pizza_canvas.yview_moveto(0.0)
+    Intro_Frames.menu_page()
+
+
+cheesy_gralic_page = Pizza_detail_generator(mini_Cheesy_gralic_pizza_frame, r"C:\Users\ajayb\PycharmProjects\Henderson_Pizza_Palace\Menu_Items_Pictures\Cheesy Gralic Pizza Resized.png",
+r"C:\Users\ajayb\PycharmProjects\Henderson_Pizza_Palace\button,background,etc\add_cart button_resized.png", "Cheesy Gralic Pizza", "Mozzarella & garlic sauce on a crème\nfraiche base topped with oregano", cheesy_gralic_going_order_list, cheesy_gralic_going_menu_page, lambda : Total_cost_order.cheesy_gralic_add_order())
+
+
+# Moduel for putting mini current label frame in the moduel
+from Cheesy_Gralic_PAGE import Cheesy_gralic_labelframe as chp
+from Cheesy_Gralic_PAGE import Anchovies as pizza_2_1
+from Cheesy_Gralic_PAGE import Baby_spinach as pizza_2_2
+from Cheesy_Gralic_PAGE import Camembert_Cheese as pizza_2_3
+from Cheesy_Gralic_PAGE import Cherry_tomato as pizza_2_4
+from Cheesy_Gralic_PAGE import Cherry_wood_somked_leg_ham as pizza_2_5
+from Cheesy_Gralic_PAGE import Chili_Flakes as pizza_2_6
+from Cheesy_Gralic_PAGE import Capasicum as pizza_2_7
+from Cheesy_Gralic_PAGE import Feta as pizza_2_8
+from Cheesy_Gralic_PAGE import Franks_RedHot_Orginal_Hot_Sauce as pizza_2_9
+from Cheesy_Gralic_PAGE import Fresh_Tomatos as pizza_2_10
+from Cheesy_Gralic_PAGE import Gralic_base_sauce_swirl as pizza_2_11
+from Cheesy_Gralic_PAGE import Gralic_Parmesan_Sauce as pizza_2_12
+from Cheesy_Gralic_PAGE import Ground_beef as pizza_2_13
+from Cheesy_Gralic_PAGE import Hickory_BBQ_Sauce as pizza_2_14
+from Cheesy_Gralic_PAGE import Hollandaise_sauce_swirl as pizza_2_15
+from Cheesy_Gralic_PAGE import Jalapenos as pizza_2_16
+from Cheesy_Gralic_PAGE import Mayonnaise as pizza_2_17
+from Cheesy_Gralic_PAGE import Mozzarella_topping as pizza_2_18
+from Cheesy_Gralic_PAGE import Mushroom as pizza_2_19
+from Cheesy_Gralic_PAGE import Olives as pizza_2_20
+from Cheesy_Gralic_PAGE import Oregano as pizza_2_21
+from Cheesy_Gralic_PAGE import Paneer_Cheese as pizza_2_22
+from Cheesy_Gralic_PAGE import Pepperoni as pizza_2_23
+from Cheesy_Gralic_PAGE import Peri_peri_sauce_swirl as pizza_2_24
+from Cheesy_Gralic_PAGE import Pineapple as pizza_2_25
+from Cheesy_Gralic_PAGE import Planet_based_Beef as pizza_2_26
+from Cheesy_Gralic_PAGE import Prawns as pizza_2_27
+from Cheesy_Gralic_PAGE import Rasher_Bacon as pizza_2_28
+from Cheesy_Gralic_PAGE import Red_onion as pizza_2_29
+from Cheesy_Gralic_PAGE import Seasoned_Chicken as pizza_2_30
+from Cheesy_Gralic_PAGE import Spring_Onion as pizza_2_31
+from Cheesy_Gralic_PAGE import Tomato_capsicum_sauce as pizza_2_32
+
+
+
+# Deleting all the toppings in current when user have added the pizza to their order list, so they could start on another one if they want
+def delete_toppings_cheesy_gralic():
+    for topping_current in chp.current_labelframe_only.winfo_children():
+        topping_current.destroy()
+        chp.storing_current_toppings.clear()
+    chp.storing_current_toppings.append("Mozzarella Cheese")
+    chp.storing_current_toppings.append("Gralic Base Sauce Swirl")
+    chp.storing_current_toppings.append("Oregano")
+
+    # reimporting all the moduel so they become normal and clickable. This done as when tthe users clicks the add to cart it will destroy everything and bring it back to noraml
+    importlib.reload(pizza_2_1)
+    importlib.reload(pizza_2_2)
+    importlib.reload(pizza_2_3)
+    importlib.reload(pizza_2_4)
+    importlib.reload(pizza_2_5)
+    importlib.reload(pizza_2_6)
+    importlib.reload(pizza_2_7)
+    importlib.reload(pizza_2_8)
+    importlib.reload(pizza_2_9)
+    importlib.reload(pizza_2_10)
+    importlib.reload(pizza_2_11)
+    importlib.reload(pizza_2_12)
+    importlib.reload(pizza_2_13)
+    importlib.reload(pizza_2_14)
+    importlib.reload(pizza_2_15)
+    importlib.reload(pizza_2_16)
+    importlib.reload(pizza_2_17)
+    importlib.reload(pizza_2_18)
+    importlib.reload(pizza_2_19)
+    importlib.reload(pizza_2_20)
+    importlib.reload(pizza_2_21)
+    importlib.reload(pizza_2_22)
+    importlib.reload(pizza_2_23)
+    importlib.reload(pizza_2_24)
+    importlib.reload(pizza_2_25)
+    importlib.reload(pizza_2_26)
+    importlib.reload(pizza_2_27)
+    importlib.reload(pizza_2_28)
+    importlib.reload(pizza_2_29)
+    importlib.reload(pizza_2_30)
+    importlib.reload(pizza_2_31)
+    importlib.reload(pizza_2_32)
+
+
+# Creating a new varibale for the topping list for simlply cheese so it can be used in differnet moduels as the actual files causes import loop error
+topping_cheesy_gralic_list = chp.storing_current_toppings
