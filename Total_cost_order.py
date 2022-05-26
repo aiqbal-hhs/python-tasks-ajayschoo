@@ -182,6 +182,7 @@ def adding_simply_cheese_1():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_SC1, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_simply_cheese_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -233,6 +234,7 @@ def adding_simply_cheese_2():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_SC2, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_simply_cheese_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -285,6 +287,7 @@ def adding_simply_cheese_3():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_SC3, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_simply_cheese_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -336,6 +339,7 @@ def adding_simply_cheese_4():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_SC4, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_simply_cheese_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -386,6 +390,7 @@ def adding_simply_cheese_5():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_SC5, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_simply_cheese_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -605,6 +610,7 @@ def adding_american_pepperoni_1():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_AM1, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_american_pepperoni_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -619,7 +625,7 @@ def adding_american_pepperoni_1():
     total_price_this_pizza = Label(show_topping_frame_AM1, text = f"${8.50 + len(expanding_pages.topping_american_pepperoni_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
     total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
 
-
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
     def show_topping_AM(e):
         show_topping_frame_AM1.place(x = 440, y= 40)
     def hide_topping_AM(e):
@@ -656,6 +662,7 @@ def adding_american_pepperoni_2():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_AM2, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_american_pepperoni_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -670,7 +677,7 @@ def adding_american_pepperoni_2():
     total_price_this_pizza = Label(show_topping_frame_AM2, text = f"${8.50 + len(expanding_pages.topping_american_pepperoni_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
     total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
 
-
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
     def show_topping_AM(e):
         show_topping_frame_AM2.place(x = 440, y= 40)
     def hide_topping_AM(e):
@@ -708,6 +715,7 @@ def adding_american_pepperoni_3():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_AM3, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_american_pepperoni_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -722,7 +730,7 @@ def adding_american_pepperoni_3():
     total_price_this_pizza = Label(show_topping_frame_AM3, text = f"${8.50 + len(expanding_pages.topping_american_pepperoni_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
     total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
 
-
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
     def show_topping_AM(e):
         show_topping_frame_AM3.place(x = 440, y= 40)
     def hide_topping_AM(e):
@@ -759,6 +767,7 @@ def adding_american_pepperoni_4():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_AM4, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_american_pepperoni_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -773,7 +782,7 @@ def adding_american_pepperoni_4():
     total_price_this_pizza = Label(show_topping_frame_AM4, text = f"${8.50 + len(expanding_pages.topping_american_pepperoni_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
     total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
 
-
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
     def show_topping_AM(e):
         show_topping_frame_AM4.place(x = 440, y= 40)
     def hide_topping_AM(e):
@@ -809,6 +818,7 @@ def adding_american_pepperoni_5():
     pizza_name_display.grid(column=0, row=0, sticky='nw')
     pizza_price_display = customtkinter.CTkLabel(show_topping_frame_AM5, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
     pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
     count_topping = 1
     if len(expanding_pages.topping_american_pepperoni_list) == 0:
         show_topping_name_frame.grid_forget()
@@ -823,7 +833,7 @@ def adding_american_pepperoni_5():
     total_price_this_pizza = Label(show_topping_frame_AM5, text = f"${8.50 + len(expanding_pages.topping_american_pepperoni_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
     total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
 
-
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
     def show_topping_AM(e):
         show_topping_frame_AM5.place(x = 440, y= 40)
     def hide_topping_AM(e):
@@ -842,6 +852,7 @@ def american_pepperoni_add_order():
     global overall_AM_counter, AM_in_or_out_1, AM_in_or_out_2, AM_in_or_out_3, AM_in_or_out_4, AM_in_or_out_5
 
     # Telling the the counter that American Pepperoni has been added or display a number
+    # This part add a number overall_AM_counter when the AMerican Pepperoni add to cart button is clicked. Acorrding to the number the this function runs that sepcific function.
     Warning_message_box.storing_pizzas.append("American Pepperoni")
 
     if AM_in_or_out_1 == 2:
@@ -900,4 +911,436 @@ def american_pepperoni_add_order():
 
     # Running the delete topping function as it abl clear everything before any things blocked with avoids an error in the system
     expanding_pages.delete_toppings_american_pepperoni()
+    Warning_message_box.add()
+
+
+
+
+
+
+
+# AM means the American pepperion and all the adding for Cheesy Gralic
+# This all for Cheesy Gralic pizza
+# This is Cheesy Gralic counter so everytime the button is clicked on Cheesy Gralic it updates
+global overall_CG_counter
+overall_CG_counter = 1
+
+
+global CG_in_or_out_1, CG_in_or_out_2, CG_in_or_out_3, CG_in_or_out_4, CG_in_or_out_5
+# 0 means a Cheesy Gralic pizza is not in the order list whereas one measn the pizza is in the list
+CG_in_or_out_1 = 0
+CG_in_or_out_2 = 0
+CG_in_or_out_3 = 0
+CG_in_or_out_4 = 0
+CG_in_or_out_5 = 0
+
+
+
+# This where everything get remove for Cheesy Gralic
+def removing_cheesy_gralic_1():
+    # setting a global statement so other variabel can get updated according to remove fucntion
+    global total_cost_for_all_pizzas, length_CG1, CG_in_or_out_1
+    allowed_to_checkout()
+    cheesy_gralic_1.order_pizza_frame.destroy()
+    total_cost_for_all_pizzas -= (length_CG1) * 0.50 + 8.50
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    Warning_message_box.storing_pizzas.remove("Cheesy Gralic")
+    show_topping_frame_CG1.destroy()
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_1 = 2
+    Warning_message_box.add()
+
+# This where everything get remove for Cheesy Gralic
+def removing_cheesy_gralic_2():
+    # setting a global statement so other variabel can get updated according to remove fucntion
+    global total_cost_for_all_pizzas, length_CG2, CG_in_or_out_2
+    allowed_to_checkout()
+    cheesy_gralic_2.order_pizza_frame.destroy()
+    total_cost_for_all_pizzas -= ((length_CG2 * 0.50) + 8.50)
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    Warning_message_box.storing_pizzas.remove("Cheesy Gralic")
+    show_topping_frame_CG2.destroy()
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_2 = 2
+    Warning_message_box.add()
+
+
+# This where everything get remove for Cheesy Gralic
+def removing_cheesy_gralic_3():
+    # setting a global statement so other variabel can get updated according to remove fucntion
+    global total_cost_for_all_pizzas, length_CG3, CG_in_or_out_3
+    allowed_to_checkout()
+    cheesy_gralic_3.order_pizza_frame.destroy()
+    total_cost_for_all_pizzas -= ((length_CG3) * 0.50) + 8.50
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    Warning_message_box.storing_pizzas.remove("Cheesy Gralic")
+    show_topping_frame_CG3.destroy()
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_3 = 2
+    Warning_message_box.add()
+
+
+# This where everything get remove for Cheesy Gralic
+def removing_cheesy_gralic_4():
+    # setting a global statement so other variabel can get updated according to remove fucntion
+    global total_cost_for_all_pizzas, length_CG4, CG_in_or_out_4
+    allowed_to_checkout()
+    cheesy_gralic_4.order_pizza_frame.destroy()
+    total_cost_for_all_pizzas -= ((length_CG4 * 0.50) + 8.50)
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    Warning_message_box.storing_pizzas.remove("Cheesy Gralic")
+    show_topping_frame_CG4.destroy()
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_4 = 2
+    Warning_message_box.add()
+
+
+# This where everything get remove for Cheesy Gralic
+def removing_cheesy_gralic_5():
+    # setting a global statement so other variabel can get updated according to remove fucntion
+    global total_cost_for_all_pizzas, length_CG5, CG_in_or_out_5
+    allowed_to_checkout()
+    cheesy_gralic_5.order_pizza_frame.destroy()
+    total_cost_for_all_pizzas -= ((length_CG5) * 0.50) + 8.50
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    Warning_message_box.storing_pizzas.remove("Cheesy Gralic")
+    show_topping_frame_CG5.destroy()
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_5 = 2
+    Warning_message_box.add()
+
+
+# This where all types of Cheesy Gralic get add iwht it toppings
+def adding_cheesy_gralic_1():
+    # setting a global variable so it can be updated and alos can be accesded outsidr os this function to be updated
+    global cheesy_gralic_1, total_cost_for_all_pizzas,show_topping_frame_CG1, length_CG1, CG_in_or_out_1, total_cost_list
+    # All the cost that is added after the a option has been chosen from the delivery and pickup
+    length_CG1 = len(expanding_pages.topping_cheesy_gralic_list)
+    total_cost_for_all_pizzas += ((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50)
+    total_cost_list.pop(0)
+    total_cost_list.insert(0,total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    cheesy_gralic_1 = Order_pizza_list(r"C:\Users\ajayb\PycharmProjects\Henderson_Pizza_Palace\Menu_Items_Pictures\Cheesy Gralic Pizza Resized order list.png", "Cheesy Gralic\nPizza", f"{((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50):.2f}", removing_cheesy_gralic_1)
+
+    # Display the toppings when teh user entre that specific pizza
+    show_topping_frame_CG1 = customtkinter.CTkFrame(Intro_Frames.order_list_frame, fg_color='white', bg_color= '#F2F2F2', corner_radius= 20)
+    show_topping_name_frame = customtkinter.CTkFrame(show_topping_frame_CG1, fg_color='white', border=0)
+    show_topping_name_frame.grid(row=1, column=0, sticky='w')
+    show_topping_price_frame = customtkinter.CTkFrame(show_topping_frame_CG1, fg_color='white', border=0)
+    show_topping_price_frame.grid(row=1, column=1, padx=(10,5))
+    pizza_name_display = Label(show_topping_frame_CG1, text = "Cheesy Gralic Pizza", background='white', font=("Bahnschrift SemiBold", 12), border=0, pady = 5, padx=22, foreground='black')
+    pizza_name_display.grid(column=0, row=0, sticky='nw')
+    pizza_price_display = customtkinter.CTkLabel(show_topping_frame_CG1, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
+    pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
+    count_topping = 1
+    if len(expanding_pages.topping_cheesy_gralic_list) == 0:
+        show_topping_name_frame.grid_forget()
+        show_topping_price_frame.grid_forget()
+    else:
+        for topping_CG1 in expanding_pages.topping_cheesy_gralic_list:
+            Label(show_topping_name_frame, text = topping_CG1, background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black' ).grid(row = count_topping, column = 0, sticky='w', padx= (32,10))
+            Label(show_topping_price_frame, text='$0.50', background='white', font=("Bahnschrift SemiBold", 8), border=0, foreground='black').grid(row=count_topping, column= 1, padx= 0, sticky='s', pady=0)
+            count_topping += 1
+    total_price_name_this_pizza = customtkinter.CTkLabel(show_topping_frame_CG1, text = "Total Price:", fg_color='white', text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=5, text_color='black')
+    total_price_name_this_pizza.grid(row=2, padx= (14,10), pady=(5,0), sticky='w', column=0)
+    total_price_this_pizza = Label(show_topping_frame_CG1, text = f"${8.50 + len(expanding_pages.topping_cheesy_gralic_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
+    total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
+
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
+    def show_topping_CG(e):
+        show_topping_frame_CG1.place(x = 440, y= 40)
+    def hide_topping_CG(e):
+        show_topping_frame_CG1.place_forget()
+
+    cheesy_gralic_1.order_pizza_frame.bind('<Enter>', show_topping_CG)
+    cheesy_gralic_1.order_pizza_frame.bind("<Leave>", hide_topping_CG)
+
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_1 = 1
+
+
+
+# This where all types of Cheesy Gralic get add iwht it toppings
+def adding_cheesy_gralic_2():
+    # setting a global variable so it can be updated and alos can be accesded outsidr os this function to be updated
+    global cheesy_gralic_2, total_cost_for_all_pizzas, show_topping_frame_CG2, length_CG2, CG_in_or_out_2, total_cost_list
+
+    # All the cost that is added after the a option has been chosen from the delivery and pickup
+    length_CG2 = len(expanding_pages.topping_cheesy_gralic_list)
+    total_cost_for_all_pizzas += ((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50)
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    cheesy_gralic_2 = Order_pizza_list(r"C:\Users\ajayb\PycharmProjects\Henderson_Pizza_Palace\Menu_Items_Pictures\Cheesy Gralic Pizza Resized order list.png", "Cheesy Gralic\nPizza", f"{((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50):.2f}", removing_cheesy_gralic_2)
+
+    # Display the toppings when teh user entre that specific pizza
+    show_topping_frame_CG2 = customtkinter.CTkFrame(Intro_Frames.order_list_frame, fg_color='white', bg_color= '#F2F2F2', corner_radius= 20)
+    show_topping_name_frame = customtkinter.CTkFrame(show_topping_frame_CG2, fg_color='white', border=0)
+    show_topping_name_frame.grid(row=1, column=0, sticky='w')
+    show_topping_price_frame = customtkinter.CTkFrame(show_topping_frame_CG2, fg_color='white', border=0)
+    show_topping_price_frame.grid(row=1, column=1, padx=(10,5))
+    pizza_name_display = Label(show_topping_frame_CG2, text = "Cheesy Gralic Pizza", background='white', font=("Bahnschrift SemiBold", 12), border=0, pady = 5, padx=22, foreground='black')
+    pizza_name_display.grid(column=0, row=0, sticky='nw')
+    pizza_price_display = customtkinter.CTkLabel(show_topping_frame_CG2, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
+    pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
+    count_topping = 1
+    if len(expanding_pages.topping_cheesy_gralic_list) == 0:
+        show_topping_name_frame.grid_forget()
+        show_topping_price_frame.grid_forget()
+    else:
+        for topping_CG2 in expanding_pages.topping_cheesy_gralic_list:
+            Label(show_topping_name_frame, text = topping_CG2, background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black' ).grid(row = count_topping, column = 0, sticky='w', padx= (32,10))
+            Label(show_topping_price_frame, text='$0.50', background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black').grid(row=count_topping, column= 1, padx= 0, sticky='s', pady=0)
+            count_topping += 1
+    total_price_name_this_pizza = customtkinter.CTkLabel(show_topping_frame_CG2, text = "Total Price:", fg_color='white', text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=5, text_color='black')
+    total_price_name_this_pizza.grid(row=2, padx= (14,10), pady=(5,0), sticky='w', column=0)
+    total_price_this_pizza = Label(show_topping_frame_CG2, text = f"${8.50 + len(expanding_pages.topping_cheesy_gralic_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
+    total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
+
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
+    def show_topping_CG(e):
+        show_topping_frame_CG2.place(x = 440, y= 40)
+    def hide_topping_CG(e):
+        show_topping_frame_CG2.place_forget()
+
+    cheesy_gralic_2.order_pizza_frame.bind('<Enter>', show_topping_CG)
+    cheesy_gralic_2.order_pizza_frame.bind("<Leave>", hide_topping_CG)
+
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_2 = 1
+
+
+
+
+# This where all types of Cheesy Gralic get add iwht it toppings
+def adding_cheesy_gralic_3():
+    # setting a global variable so it can be updated and alos can be accesded outsidr os this function to be updated
+    global cheesy_gralic_3, total_cost_for_all_pizzas, show_topping_frame_CG3, length_CG3, CG_in_or_out_3, total_cost_list
+
+    # All the cost that is added after the a option has been chosen from the delivery and pickup
+    length_CG3 = len(expanding_pages.topping_cheesy_gralic_list)
+    total_cost_for_all_pizzas += ((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50)
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    cheesy_gralic_3 = Order_pizza_list(r"C:\Users\ajayb\PycharmProjects\Henderson_Pizza_Palace\Menu_Items_Pictures\Cheesy Gralic Pizza Resized order list.png", "Cheesy Gralic\nPizza", f"{((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50):.2f}", removing_cheesy_gralic_3)
+
+    # Display the toppings when teh user entre that specific pizza
+    show_topping_frame_CG3 = customtkinter.CTkFrame(Intro_Frames.order_list_frame, fg_color='white', bg_color= '#F2F2F2', corner_radius= 20)
+    show_topping_name_frame = customtkinter.CTkFrame(show_topping_frame_CG3, fg_color='white', border=0)
+    show_topping_name_frame.grid(row=1, column=0, sticky='w')
+    show_topping_price_frame = customtkinter.CTkFrame(show_topping_frame_CG3, fg_color='white', border=0)
+    show_topping_price_frame.grid(row=1, column=1, padx=(10,5))
+    pizza_name_display = Label(show_topping_frame_CG3, text = "Cheesy Gralic Pizza", background='white', font=("Bahnschrift SemiBold", 12), border=0, pady = 5, padx=22, foreground='black')
+    pizza_name_display.grid(column=0, row=0, sticky='nw')
+    pizza_price_display = customtkinter.CTkLabel(show_topping_frame_CG3, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
+    pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
+    count_topping = 1
+    if len(expanding_pages.topping_cheesy_gralic_list) == 0:
+        show_topping_name_frame.grid_forget()
+        show_topping_price_frame.grid_forget()
+    else:
+        for topping_CG3 in expanding_pages.topping_cheesy_gralic_list:
+            Label(show_topping_name_frame, text = topping_CG3, background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black' ).grid(row = count_topping, column = 0, sticky='w', padx= (32,10))
+            Label(show_topping_price_frame, text='$0.50', background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black').grid(row=count_topping, column= 1, padx= 0, sticky='s', pady=0)
+            count_topping += 1
+    total_price_name_this_pizza = customtkinter.CTkLabel(show_topping_frame_CG3, text = "Total Price:", fg_color='white', text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=5, text_color='black')
+    total_price_name_this_pizza.grid(row=2, padx= (14,10), pady=(5,0), sticky='w', column=0)
+    total_price_this_pizza = Label(show_topping_frame_CG3, text = f"${8.50 + len(expanding_pages.topping_cheesy_gralic_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
+    total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
+
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
+    def show_topping_CG(e):
+        show_topping_frame_CG3.place(x = 440, y= 40)
+    def hide_topping_CG(e):
+        show_topping_frame_CG3.place_forget()
+
+    cheesy_gralic_3.order_pizza_frame.bind('<Enter>', show_topping_CG)
+    cheesy_gralic_3.order_pizza_frame.bind("<Leave>", hide_topping_CG)
+
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_3 = 1
+
+
+
+# This where all types of Cheesy Gralic get add iwht it toppings
+def adding_cheesy_gralic_4():
+    # setting a global variable so it can be updated and alos can be accesded outsidr os this function to be updated
+    global cheesy_gralic_4, total_cost_for_all_pizzas, show_topping_frame_CG4, length_CG4, CG_in_or_out_4, total_cost_list
+
+    # All the cost that is added after the a option has been chosen from the delivery and pickup
+    length_CG4 = len(expanding_pages.topping_cheesy_gralic_list)
+    total_cost_for_all_pizzas += ((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50)
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    cheesy_gralic_4 = Order_pizza_list(r"C:\Users\ajayb\PycharmProjects\Henderson_Pizza_Palace\Menu_Items_Pictures\Cheesy Gralic Pizza Resized order list.png", "Cheesy Gralic\nPizza", f"{((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50):.2f}", removing_cheesy_gralic_4)
+
+    # Display the toppings when teh user entre that specific pizza
+    show_topping_frame_CG4 = customtkinter.CTkFrame(Intro_Frames.order_list_frame, fg_color='white', bg_color= '#F2F2F2', corner_radius= 20)
+    show_topping_name_frame = customtkinter.CTkFrame(show_topping_frame_CG4, fg_color='white', border=0)
+    show_topping_name_frame.grid(row=1, column=0, sticky='w')
+    show_topping_price_frame = customtkinter.CTkFrame(show_topping_frame_CG4, fg_color='white', border=0)
+    show_topping_price_frame.grid(row=1, column=1, padx=(10,5))
+    pizza_name_display = Label(show_topping_frame_CG4, text = "Cheesy Gralic Pizza", background='white', font=("Bahnschrift SemiBold", 12), border=0, pady = 5, padx=22, foreground='black')
+    pizza_name_display.grid(column=0, row=0, sticky='nw')
+    pizza_price_display = customtkinter.CTkLabel(show_topping_frame_CG4, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
+    pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
+    count_topping = 1
+    if len(expanding_pages.topping_cheesy_gralic_list) == 0:
+        show_topping_name_frame.grid_forget()
+        show_topping_price_frame.grid_forget()
+    else:
+        for topping_AM4 in expanding_pages.topping_cheesy_gralic_list:
+            Label(show_topping_name_frame, text = topping_AM4, background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black' ).grid(row = count_topping, column = 0, sticky='w', padx= (32,10))
+            Label(show_topping_price_frame, text='$0.50', background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black').grid(row=count_topping, column= 1, padx= 0, sticky='s', pady=0)
+            count_topping += 1
+    total_price_name_this_pizza = customtkinter.CTkLabel(show_topping_frame_CG4, text = "Total Price:", fg_color='white', text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=5, text_color='black')
+    total_price_name_this_pizza.grid(row=2, padx= (14,10), pady=(5,0), sticky='w', column=0)
+    total_price_this_pizza = Label(show_topping_frame_CG4, text = f"${8.50 + len(expanding_pages.topping_cheesy_gralic_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
+    total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
+
+    # This parts shows the topping of a certain when the cursor hover that specific pizza.
+    def show_topping_CG(e):
+        show_topping_frame_CG4.place(x = 440, y= 40)
+    def hide_topping_CG(e):
+        show_topping_frame_CG4.place_forget()
+
+    cheesy_gralic_4.order_pizza_frame.bind('<Enter>', show_topping_CG)
+    cheesy_gralic_4.order_pizza_frame.bind("<Leave>", hide_topping_CG)
+
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_4 = 1
+
+
+# This where all types of Cheesy Gralic get add iwht it toppings
+def adding_cheesy_gralic_5():
+    # setting a global variable so it can be updated and alos can be accesded outsidr os this function to be updated
+    global cheesy_gralic_5, total_cost_for_all_pizzas, show_topping_frame_CG5, length_CG5, CG_in_or_out_5, total_cost_list
+
+    # All the cost that is added after the a option has been chosen from the delivery and pickup
+    length_CG5 = len(expanding_pages.topping_cheesy_gralic_list)
+    total_cost_for_all_pizzas += ((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50)
+    total_cost_list.pop(0)
+    total_cost_list.insert(0, total_cost_for_all_pizzas)
+    Delivery_or_pickup.total_label.configure(text=f"Total Cost: ${sum(total_cost_list):.2f}")
+    cheesy_gralic_5 = Order_pizza_list(r"C:\Users\ajayb\PycharmProjects\Henderson_Pizza_Palace\Menu_Items_Pictures\Cheesy Gralic Pizza Resized order list.png", "Cheesy Gralic\nPizza", f"{((len(expanding_pages.topping_cheesy_gralic_list) * 0.50) + 8.50):.2f}", removing_cheesy_gralic_5)
+
+    # Display the toppings when teh user entre that specific pizza
+    show_topping_frame_CG5 = customtkinter.CTkFrame(Intro_Frames.order_list_frame, fg_color='white', bg_color= '#F2F2F2', corner_radius= 20)
+    show_topping_name_frame = customtkinter.CTkFrame(show_topping_frame_CG5, fg_color='white', border=0)
+    show_topping_name_frame.grid(row=1, column=0, sticky='w')
+    show_topping_price_frame = customtkinter.CTkFrame(show_topping_frame_CG5, fg_color='white', border=0)
+    show_topping_price_frame.grid(row=1, column=1, padx=(10,5))
+    pizza_name_display = Label(show_topping_frame_CG5, text = "Cheesy Gralic Pizza", background='white', font=("Bahnschrift SemiBold", 12), border=0, pady = 5, padx=22, foreground='black')
+    pizza_name_display.grid(column=0, row=0, sticky='nw')
+    pizza_price_display = customtkinter.CTkLabel(show_topping_frame_CG5, text = "$8.50", text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=30, fg_color='white', text_color='black')
+    pizza_price_display.grid(row= 0, column=1, padx=(10,5), pady=5)
+    # This parts count the topping for specific pizza and displays them it price.
+    count_topping = 1
+    if len(expanding_pages.topping_cheesy_gralic_list) == 0:
+        show_topping_name_frame.grid_forget()
+        show_topping_price_frame.grid_forget()
+    else:
+        for topping_CG5 in expanding_pages.topping_cheesy_gralic_list:
+            Label(show_topping_name_frame, text = topping_CG5, background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black' ).grid(row = count_topping, column = 0, sticky='w', padx= (32,10))
+            Label(show_topping_price_frame, text='$0.50', background='white', font=("Bahnschrift SemiLight", 8), border=0, foreground='black').grid(row=count_topping, column= 1, padx= 0, sticky='s', pady=0)
+            count_topping += 1
+    total_price_name_this_pizza = customtkinter.CTkLabel(show_topping_frame_CG5, text = "Total Price:", fg_color='white', text_font=("Bahnschrift SemiBold", 12), corner_radius=20, width=5, text_color='black')
+    total_price_name_this_pizza.grid(row=2, padx= (14,10), pady=(5,0), sticky='w', column=0)
+    total_price_this_pizza = Label(show_topping_frame_CG5, text = f"${8.50 + len(expanding_pages.topping_cheesy_gralic_list)*0.50:.2f}", background='white', font=("Bahnschrift SemiBold", 12), border=0, width=10, foreground='black')
+    total_price_this_pizza.grid(row=2, pady=(5,0), sticky='s', column=1)
+
+    # This parts shows the topping of acertain when the cursor hover that specific pizza.
+    def show_topping_CG(e):
+        show_topping_frame_CG5.place(x = 440, y= 40)
+    def hide_topping_CG(e):
+        show_topping_frame_CG5.place_forget()
+
+    cheesy_gralic_5.order_pizza_frame.bind('<Enter>', show_topping_CG)
+    cheesy_gralic_5.order_pizza_frame.bind("<Leave>", hide_topping_CG)
+
+    # updating the in and out Cheesy Gralic pizza
+    CG_in_or_out_5 = 1
+
+
+
+# This take of the Cheesy Gralic adding in the order list
+def cheesy_gralic_add_order():
+    global overall_CG_counter, CG_in_or_out_1, CG_in_or_out_2, CG_in_or_out_3, CG_in_or_out_4, CG_in_or_out_5
+
+    # Telling the the counter that Cheesy Gralic has been added or display a number
+    # This part add a number overall_CG_counter when the Cheesy Gralic add to cart button is clicked. Acorrding to the number the this function runs that sepcific function.
+    Warning_message_box.storing_pizzas.append("Cheesy Gralic")
+
+    if CG_in_or_out_1 == 2:
+        CG_in_or_out_1 = 0
+        overall_CG_counter = 1
+
+    elif CG_in_or_out_2 == 2:
+        CG_in_or_out_2 = 0
+        overall_CG_counter = 2
+
+    elif CG_in_or_out_3 == 2:
+        CG_in_or_out_3 = 0
+        overall_CG_counter = 3
+
+    elif CG_in_or_out_4 == 2:
+        CG_in_or_out_4 = 0
+        overall_CG_counter = 4
+
+    elif CG_in_or_out_5 == 2:
+        CG_in_or_out_5 = 0
+        overall_CG_counter = 5
+
+
+
+    if overall_CG_counter == 1:
+        if CG_in_or_out_1 == 0:
+            adding_cheesy_gralic_1()
+
+
+
+    elif overall_CG_counter == 2:
+        if CG_in_or_out_2 == 0:
+            adding_cheesy_gralic_2()
+
+
+    elif overall_CG_counter == 3:
+        if CG_in_or_out_3 == 0:
+            adding_cheesy_gralic_3()
+
+
+    elif overall_CG_counter== 4:
+        if CG_in_or_out_4 == 0:
+            adding_cheesy_gralic_4()
+
+
+    elif overall_CG_counter == 5:
+        overall_CG_counter = 0
+        if CG_in_or_out_5 == 0:
+            adding_cheesy_gralic_5()
+
+
+
+    # This the counter for all five Cheesy Gralic pizza
+    overall_CG_counter += 1
+
+
+    # Running the delete topping function as it abl clear everything before any things blocked with avoids an error in the system
+    expanding_pages.delete_toppings_cheesy_gralic()
     Warning_message_box.add()
